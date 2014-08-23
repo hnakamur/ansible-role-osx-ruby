@@ -1,0 +1,5 @@
+---
+- homebrew: name=ruby state=latest
+
+- gem: name={{ item }} state=latest
+  with_items: osx_ruby_global_gems

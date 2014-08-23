@@ -1,0 +1,4 @@
+---
+osx_ruby_global_gems:
+  - bundler
+  - compass
