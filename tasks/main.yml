@@ -1,5 +1,7 @@
 ---
 - homebrew: name=ruby state=latest
 
+- template: src=gemrc.j2 dest=~/.gemrc
+
 - gem: name={{ item }} state=latest
   with_items: osx_ruby_global_gems
